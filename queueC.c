@@ -27,14 +27,6 @@ void swap(linkedNode* node1, linkedNode* node2) {
     node2->value = tempNode;
 }
 
-void test(queue* Queue) {
-    for (linkedNode* tempNode = Queue->front; tempNode != NULL;
-         tempNode = tempNode->nextNode) {
-        printf("%d ", tempNode->value);
-    }
-    printf("\n");
-}
-
 int peek(queue const* Queue) { return Queue->front->value; }
 
 int isFull(queue const* Queue) { return (Queue->count >= N); }
